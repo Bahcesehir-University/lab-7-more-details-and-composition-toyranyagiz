@@ -45,7 +45,7 @@ private:
 public:
     // TODO 6: constructor with member initializer list
     Rectangle(double x1, double y1, double x2, double y2)
-        : topLeft(x1,x2), bottomRight(y1,y2) {}  // stub — fix initializer
+        : topLeft(x1,y1), bottomRight(x1,y2) {}  // stub — fix initializer
         
 
     // TODO 7: const getWidth()
@@ -55,7 +55,7 @@ public:
     double getHeight() const { return std::abs(bottomRight.y - topLeft.y);} // stub
 
     // TODO 9: const getArea()
-    double getArea() const { return getWidth() * getHeight();}  // stub
+    double getArea() const { return getWidth()*getHeight(); }  // stub
 
     // TODO 10: const display()
     void display() const {
